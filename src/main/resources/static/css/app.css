@@ -1,0 +1,241 @@
+:root {
+    --bs-blue: #037BC0;
+    --bs-green: #258d10fd;
+}
+
+html {
+    font-size: 62.5%;
+    /* 1 rem = 10px **/
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 5rem;
+    }
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+@media (min-width: 768px) {
+    h2 {
+        font-size: 4rem;
+    }
+}
+
+h3 {
+    font-size: 2.4rem;
+}
+
+@media (min-width: 768px) {
+    h3 {
+        font-size: 3rem;
+    }
+}
+
+/** Reescribir colores */
+.text-primary,
+.nombre-sitio {
+    color: var(--bs-blue) !important;
+}
+
+.btn-success {
+    background-color: var(--bs-green) !important;
+
+}
+
+.bg-primary,
+.btn-primary {
+    background-color: var(--bs-blue) !important;
+}
+
+
+
+/* Carusel para la imagenes principales */
+.main {
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    width: 100vw;
+}
+
+.carrusel-container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.offcanvas {
+    width: 40% !important;
+}
+
+.boton-carrito {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1050;
+}
+
+
+.carousel-item img {
+    height: 76vh;
+    /* Cambios: 85rem o 300px */
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+
+
+
+/* Punto rojo de notificación */
+.notificacion {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 12px;
+    height: 12px;
+    background-color: red;
+    border-radius: 50%;
+    display: none;
+    /* Se oculta por defecto */
+}
+
+.reservado {
+    color: #A2D530;
+    /* Verde claro similar al de la imagen */
+    font-style: italic;
+    /* Mantiene la cursiva */
+    font-weight: bold;
+    /* Opcional: poner en negrita */
+}
+
+.resumen-titulo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* END */
+
+@media (min-width: 768px) {
+    .hero {
+        height: 55rem;
+    }
+}
+
+/** Productos */
+@media (min-width:768px) {
+    .producto img {
+        height: 52rem;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.categoria img {
+    transition-property: transform;
+    transition-duration: 300ms;
+}
+
+.categoria img:hover {
+    transform: scale(1.2);
+}
+
+.galeria li:not(:last-of-type) {
+    margin-bottom: 1rem;
+}
+
+.form-control {
+    padding: 1rem;
+    font-size: 1.6rem;
+}
+
+#btn-politicas {
+    font-size: 2rem;
+    /* Tamaño de la letra más grande */
+    padding: 1rem 2rem;
+    /* Ajusta el espacio interno del botón */
+    text-align: center;
+    /* Asegura el texto centrado */
+}
+
+/*enlace subrayado cuando el usuario acerque el cursor y vuelva ala normalidad cuando se aleje enn el Blog*/
+.subrayado:hover {
+    text-decoration: underline !important;
+}
+
+
+/*Botones de compra*/
+.boton {
+    display: block;
+    /* Hace que el botón ocupe todo el ancho disponible */
+    width: 80%;
+    /* Ajusta el ancho del botón */
+    margin: 0 auto;
+    /* Centra horizontalmente */
+    padding: 12px 20px;
+    /* Agrega espacio interno */
+    font-size: 1.2rem;
+    /* Aumenta el tamaño del texto */
+    border-radius: 8px;
+    /* Bordes redondeados para mejor estética */
+    text-align: center;
+}
+
+
+
+/* Estilo del botón grande */
+.grupo-btn-grande {
+    font-size: 2rem;
+    /* Aumenta tamaño del texto */
+    padding: 1.5rem 4rem;
+    /* Más grande aún */
+    border-radius: 1rem;
+    font-weight: bold;
+}
+
+/* Estilo del contenido del modal */
+.grupo-texto-grande {
+    font-size: 2rem;
+    /* Más grande aún */
+    line-height: 1.9;
+}
+
+/* Modal más grande aún si lo deseas */
+@media (min-width: 768px) {
+    #modalGrupo .modal-dialog {
+        max-width: 600px;
+    }
+}
