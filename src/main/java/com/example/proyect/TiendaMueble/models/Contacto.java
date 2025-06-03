@@ -1,6 +1,13 @@
 package com.example.proyect.TiendaMueble.models;
 
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "formularios")
 public class Contacto {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
     private String nombre;
     private String asunto;
     private String email;

@@ -32,6 +32,7 @@ if (modalImagen) {
 
 
 // JS en la Area de Contacto
+// Validación personalizada Bootstrap y visual en tiempo real
 document.addEventListener("DOMContentLoaded", function () {
   'use strict';
 
@@ -57,24 +58,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Validación al enviar el formulario
   form.addEventListener('submit', function (event) {
-    event.preventDefault(); // Evita el envío real
-
-    // Validar todos los campos
-    campos.forEach(campo => validarCampo(campo));
-
     if (!form.checkValidity()) {
+      event.preventDefault(); // ❌ Evita el envío si hay errores
       event.stopPropagation();
       form.classList.add('was-validated');
     } else {
-      // ✅ Mostrar mensaje
-      alert("✅ Formulario enviado correctamente. Nos pondremos en contacto contigo pronto.");
-
-      // Limpiar todo
-      form.reset();
-      form.classList.remove('was-validated');
-      campos.forEach(campo => {
-        campo.classList.remove('is-valid', 'is-invalid');
-      });
+      // ✅ Formulario válido: se enviará al backend (no bloqueamos)
+      // Podrías poner un mensaje de éxito en la respuesta del servidor, no aquí
     }
   }, false);
 });
