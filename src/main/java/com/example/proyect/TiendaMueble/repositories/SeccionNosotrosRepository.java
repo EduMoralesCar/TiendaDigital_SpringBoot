@@ -1,4 +1,5 @@
 package com.example.proyect.TiendaMueble.repositories;
+
 import com.example.proyect.TiendaMueble.models.SeccionNosotros;
 import org.springframework.data.jpa.repository.JpaRepository;
 

@@ -25,3 +25,9 @@ public class Pais {
         return nombre;
     }
 }
+
+//@Entity marca una clase como una entidad JPA, lo que significa que se mapeará a una tabla en la base de datos.
+//@Id indica que un campo es la clave primaria (PK) de la tabla.
+//@Column personaliza cómo un campo se mapea a una columna en la BD (nombre, longitud, si es nullable, etc.).
+//@OneToMany / @ManyToOne: Definen relaciones entre entidades (1-N, N-1).
+//@Table especifica el nombre de la tabla en la base de datos

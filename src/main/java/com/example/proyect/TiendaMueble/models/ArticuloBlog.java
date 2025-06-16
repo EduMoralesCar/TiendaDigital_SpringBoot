@@ -1,4 +1,5 @@
 package com.example.proyect.TiendaMueble.models;
+
 import jakarta.persistence.*;
 
 @Entity
@@ -34,7 +35,7 @@ public class ArticuloBlog {
 
     // Constructor con parámetros
     public ArticuloBlog(String id, String titulo, String imagen, String fecha,
-                        String autor, String subtitulo, String contenido, String enlace) {
+            String autor, String subtitulo, String contenido, String enlace) {
         this.id = id;
         this.titulo = titulo;
         this.imagen = imagen;

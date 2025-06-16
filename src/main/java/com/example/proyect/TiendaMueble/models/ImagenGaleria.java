@@ -1,4 +1,5 @@
 package com.example.proyect.TiendaMueble.models;
+
 import jakarta.persistence.*;
 
 @Entity

@@ -17,7 +17,8 @@ public class Contacto {
     private String tipoUsuario; // "cliente" o "proveedor"
 
     // Constructor vacío (necesario para Spring)
-    public Contacto() {}
+    public Contacto() {
+    }
 
     // Getters y Setters
     public String getNombre() {

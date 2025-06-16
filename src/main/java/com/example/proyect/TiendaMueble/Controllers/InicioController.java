@@ -19,6 +19,7 @@ import java.util.List;
 //@GetMapping indica que un método debe responder a una petición GET en una URL específica.
 //@ModelAttribute vincula datos del formulario a un objeto o agrega datos al modelo que se enviarán a la vista.
 //@PostMapping indica que un método debe responder a una solicitud POST, comúnmente usada para enviar formularios o crear datos.
+// @Autowired  inyecta automáticamente una dependencia (objeto) que Spring gestiona, evitando tener que crearlo manualmente con new.
 
 @Controller
 public class InicioController {
