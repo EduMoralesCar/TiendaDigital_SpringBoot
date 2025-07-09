@@ -41,6 +41,34 @@
                     <a class="text-dark text-decoration-none" th:href="@{/galeria}">Galería</a>
                     <a class="text-dark text-decoration-none" th:href="@{/contacto}">Contacto</a>
                 </nav>
+                <!-- Avatar de usuario autenticado -->
+                <div th:if="${usuario != null}" class="ms-auto position-relative" style="margin-left: 20px;">
+                    <div id="avatar-btn" style="width:40px;height:40px;background:#007bff;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;font-weight:bold;font-size:1.2rem;user-select:none;" onclick="toggleUserMenu()">
+                        <span th:text="${usuario.username.substring(0,1).toUpperCase()}">U</span>
+                    </div>
+                    <div id="user-menu" style="display:none;position:absolute;right:0;top:50px;background:#fff;border:1px solid #ddd;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.15);min-width:200px;z-index:1000;">
+                        <div style="padding:16px 16px 8px 16px;">
+                            <div style="font-weight:bold;font-size:1.1rem;" th:text="${usuario.firstname} + ' ' + ${usuario.lastname}">Nombre Apellido</div>
+                            <div style="color:#555;" th:text="${usuario.username}">username</div>
+                            <div style="color:#888;" th:text="${usuario.country}">País</div>
+                        </div>
+                        <div style="border-top:1px solid #eee;margin-top:8px;padding:8px 16px;">
+                            <a th:href="@{/logout}" style="color:#d9534f;text-decoration:none;font-weight:bold;">Cerrar sesión</a>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    function toggleUserMenu() {
+                        var menu = document.getElementById('user-menu');
+                        menu.style.display = (menu.style.display === 'none' || menu.style.display === '') ? 'block' : 'none';
+                        document.addEventListener('click', function handler(e) {
+                            if (!e.target.closest('#avatar-btn') && !e.target.closest('#user-menu')) {
+                                menu.style.display = 'none';
+                                document.removeEventListener('click', handler);
+                            }
+                        });
+                    }
+                </script>
             </div>
         </div>
     </div>

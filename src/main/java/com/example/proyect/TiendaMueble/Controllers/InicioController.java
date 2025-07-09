@@ -1,6 +1,4 @@
 package com.example.proyect.TiendaMueble.Controllers;
-
-
 import com.example.proyect.TiendaMueble.models.*;
 import com.example.proyect.TiendaMueble.repositories.*;
 import jakarta.annotation.PostConstruct;
@@ -10,11 +8,14 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import java.util.Arrays;
 import java.util.List;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
+import com.example.proyect.TiendaMueble.models.Entity.User;
+import com.example.proyect.TiendaMueble.repositories.UserRepository;
 //@Controller define una clase que recibe peticiones web, las procesa y devuelve una vista (HTML, JSP, etc.).
 //@GetMapping indica que un método debe responder a una petición GET en una URL específica.
 //@ModelAttribute vincula datos del formulario a un objeto o agrega datos al modelo que se enviarán a la vista.
@@ -33,6 +34,8 @@ public class InicioController {
     private CategoriaGaleriaRepository categoriaGaleriaRepository;
     @Autowired
     private ContactoRepository contactoRepository;
+    @Autowired
+    private UserRepository userRepository;
 
 
     @PostConstruct
@@ -47,6 +50,12 @@ public class InicioController {
     public String mostrarProductos(Model model) {
         model.addAttribute("title", "Nuestros Productos");
         model.addAttribute("productos", productoRepository.findAll());
+        // Obtener usuario autenticado
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        if (auth != null && auth.isAuthenticated() && !auth.getPrincipal().equals("anonymousUser")) {
+            String username = auth.getName();
+            userRepository.findByUsername(username).ifPresent(user -> model.addAttribute("usuario", user));
+        }
         return "index";
     }
 
