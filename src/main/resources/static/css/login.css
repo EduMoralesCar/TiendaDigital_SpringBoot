@@ -1,13 +1,13 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-.h2{
+.h2 {
     text-align: center;
 }
 
-form{
+form {
     background-color: #09f;
     display: flex;
     flex-direction: column;

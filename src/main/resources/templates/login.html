@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Iniciar Sesión</title>
-    <link rel="stylesheet" th:href="@{/css/app.css}" />
+    <link rel="stylesheet" th:href="@{/css/app.css}"/>
 </head>
 <body>
-    <div class="form-auth-container">
-        <h2>Iniciar Sesión</h2>
-        <div th:if="${error}" class="error">[[${error}]]</div>
-        <div th:if="${success}" class="success">[[${success}]]</div>
-        <form th:action="@{/login}" method="post" th:object="${loginRequest}">
-            <label for="username">Usuario o Email:</label>
-            <input type="text" id="username" th:field="*{username}" required>
+<div class="form-auth-container">
+    <h2>Iniciar Sesión</h2>
+    <div th:if="${error}" class="error">[[${error}]]</div>
+    <div th:if="${success}" class="success">[[${success}]]</div>
+    <form th:action="@{/login}" method="post" th:object="${loginRequest}">
+        <label for="username">Usuario o Email:</label>
+        <input type="text" id="username" th:field="*{username}" required>
 
-            <label for="password">Contraseña:</label>
-            <input type="password" id="password" th:field="*{password}" required>
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" th:field="*{password}" required>
 
-            <button type="submit">Iniciar Sesión</button>
-        </form>
-        <p>¿No tienes una cuenta? <a th:href="@{/register}">Regístrate aquí</a></p>
-    </div>
+        <button type="submit">Iniciar Sesión</button>
+    </form>
+    <p>¿No tienes una cuenta? <a th:href="@{/register}">Regístrate aquí</a></p>
+</div>
 </body>
 </html> 

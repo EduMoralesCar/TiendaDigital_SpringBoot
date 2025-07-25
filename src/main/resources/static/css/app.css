@@ -67,7 +67,6 @@ h3 {
 }
 
 
-
 /* Carusel para la imagenes principales */
 .main {
     min-height: 100vh;
@@ -115,7 +114,6 @@ h3 {
 }
 
 
-
 /* Punto rojo de notificación */
 .notificacion {
     position: absolute;
@@ -156,7 +154,7 @@ h3 {
 }
 
 /** Productos */
-@media (min-width:768px) {
+@media (min-width: 768px) {
     .producto img {
         height: 52rem;
         width: 100%;
@@ -215,7 +213,6 @@ h3 {
 }
 
 
-
 /* Estilo del botón grande */
 .grupo-btn-grande {
     font-size: 2rem;
@@ -246,23 +243,26 @@ h3 {
     margin: 40px auto;
     background: #fff;
     border-radius: 12px;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
     padding: 32px 28px 24px 28px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .form-auth-container h2 {
     margin-bottom: 24px;
     color: var(--bs-blue);
     font-weight: bold;
 }
+
 .form-auth-container label {
     display: block;
     margin-bottom: 6px;
     color: #333;
     font-weight: 500;
 }
+
 .form-auth-container input[type="text"],
 .form-auth-container input[type="email"],
 .form-auth-container input[type="password"] {
@@ -275,10 +275,12 @@ h3 {
     background: #f8f9fa;
     transition: border-color 0.2s;
 }
+
 .form-auth-container input:focus {
     border-color: var(--bs-blue);
     outline: none;
 }
+
 .form-auth-container button[type="submit"] {
     width: 100%;
     padding: 12px;
@@ -292,17 +294,21 @@ h3 {
     transition: background 0.2s;
     margin-top: 8px;
 }
+
 .form-auth-container button[type="submit"]:hover {
     background: #025a91;
 }
+
 .form-auth-container p {
     margin-top: 18px;
     font-size: 1.4rem;
 }
+
 .form-auth-container a {
     color: var(--bs-blue);
     text-decoration: underline;
 }
+
 .form-auth-container .error {
     color: #d9534f;
     background: #ffeaea;
@@ -313,6 +319,7 @@ h3 {
     width: 100%;
     text-align: center;
 }
+
 .form-auth-container .success {
     color: #258d10fd;
     background: #eaffea;
