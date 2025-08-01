@@ -71,9 +71,9 @@ git clone https://github.com/EduMoralesCar/TiendaDigital_SpringBoot.git
 cd TiendaDigital_SpringBoot
 
 # Crear la base de datos en MySQL (usa el nombre del archivo application.properties)
-# Edita src/main/resources/application.properties con tus credenciales
+# Asegúrate de editar src/main/resources/application.properties con tus credenciales (usuario, contraseña, URL, etc.)
 
-# Inicia la aplicación con Maven y Spring Boot
+# Ejecuta la aplicación en modo desarrollo utilizando Maven
 mvn spring-boot:run
 ```
 
