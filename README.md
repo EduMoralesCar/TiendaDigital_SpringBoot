@@ -4,6 +4,12 @@
 
 La finalidad del proyecto es gestionar productos, formularios de contacto, usuarios y otras entidades clave desde un backend robusto y un frontend elegante y funcional. Esto mejora la mantenibilidad del sistema y sienta las bases para escalar el negocio digitalmente.
 
+## 🌐 Versión estática original del proyecto
+
+Antes de la transformación digital, el sitio web de TiendaMueble fue desarrollado como una página estática utilizando **Bootstrap**. Si deseas revisar cómo era el proyecto antes de convertirse en una aplicación dinámica con Spring Boot y Thymeleaf, puedes visitar el siguiente repositorio:
+
+🔗 [Repositorio de la versión estática](https://github.com/EduMoralesCar/TransformacionDigital_TiendaMuebles.git)
+
 ---
 
 ## 📖 Historia del Proyecto
