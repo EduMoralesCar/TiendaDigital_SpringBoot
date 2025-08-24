@@ -168,6 +168,7 @@ http://localhost:login
 > ### Paso 1:
 > Ejecutamos la aplicación en modo desarrollo utilizando Maven
 <img width="935" height="187" alt="image" src="https://github.com/user-attachments/assets/bffd5ec2-b3c9-4a24-9eff-39bac13eeacb" />
+
 > #### Resultado en la consola
 <img width="1273" height="907" alt="image" src="https://github.com/user-attachments/assets/79f47663-a0a0-4c9f-b296-4a63e2146c5c" />
 
@@ -185,6 +186,7 @@ http://localhost:login
 
 > #### Una vez iniciada la sesión correctamente, serás redirigido automáticamente a la página principal de la tienda.
 <img width="1365" height="767" alt="image" src="https://github.com/user-attachments/assets/66c4e5f1-3d98-4f2a-a765-67cc78d6ab37" />
+
 > #### 🏠 Aquí podrás navegar por los productos, acceder al blog, revisar tu perfil y explorar las distintas secciones disponibles.
 
 > ### Paso 4: Registrarse
