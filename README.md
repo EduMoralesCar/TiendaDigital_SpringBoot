@@ -1,4 +1,4 @@
-<img width="1134" height="617" alt="image" src="https://github.com/user-attachments/assets/518f18ad-d1b3-40ef-bde6-cd7e9cee54fb" /># 🛋️ TiendaMueble - Proyecto de Digitalización
+# 🛋️ TiendaMueble - Proyecto de Digitalización
 
 **TiendaMueble** es una tienda ficticia especializada en la venta de muebles para el hogar. Este proyecto representa la transformación digital de su sitio web: pasamos de una página estática hecha con Bootstrap a una aplicación web dinámica, escalable y profesional desarrollada con **Spring Boot** y **Thymeleaf**.
 
@@ -212,11 +212,3 @@ http://localhost:login
 > 📸 A continuación se muestra una captura de los registros en MySQL:
 > <img width="1134" height="617" alt="Registros en MySQL" src="https://github.com/user-attachments/assets/1acd7eca-f69b-4e1b-b148-fd0d95af6782" />
 
-
-> ###  Paso 6:
-> ###  Paso 7:
-> ###  Paso 8:
-> ###  Paso 9:
-> ###  Paso 10:
-> ###  Paso 11:
-> Paso 12:
