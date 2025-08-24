@@ -191,6 +191,17 @@ http://localhost:login
 
 > ### Paso 4: Registrarse
 > Si es tu primera vez, haz clic en “Registrarse” y completa el formulario para crear tu cuenta.
+<img width="1365" height="767" alt="image" src="https://github.com/user-attachments/assets/7ed31529-156f-454e-a5a4-6f984e94a244" />
+
+> #### Ingresamos nuestras Credenciales
+<img width="1365" height="767" alt="image" src="https://github.com/user-attachments/assets/3515fa4e-8487-4ba8-a706-135946e946ad" />
+
+> #### Iniciamos Sesión
+<img width="1365" height="767" alt="image" src="https://github.com/user-attachments/assets/bf248049-971b-4c7b-b589-3ddb331cc4d0" />
+
+> #### Una vez iniciada la sesión correctamente, serás redirigido automáticamente a la página principal de la tienda.
+<img width="1365" height="767" alt="image" src="https://github.com/user-attachments/assets/cff3b0ce-8ccf-4f83-a151-b1764c6f0469" />
+> #### 🏠 Aquí podrás navegar por los productos, acceder al blog, revisar tu perfil y explorar las distintas secciones disponibles.
 
 > ###  Paso 5:
 > ###  Paso 6:
