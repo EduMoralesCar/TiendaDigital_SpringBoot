@@ -163,3 +163,38 @@ http://localhost:login
             │   └── 📄 login.html
             └── 📄 application.properties
 ```
+
+## 🖼️ Captura de Pantallas
+> ### Paso 1:
+> Ejecutamos la aplicación en modo desarrollo utilizando Maven
+<img width="935" height="187" alt="image" src="https://github.com/user-attachments/assets/bffd5ec2-b3c9-4a24-9eff-39bac13eeacb" />
+> #### Resultado en la consola
+<img width="1273" height="907" alt="image" src="https://github.com/user-attachments/assets/79f47663-a0a0-4c9f-b296-4a63e2146c5c" />
+
+> ###  Paso 2:
+> Abrimos nuestro navegador y escribimos:
+ ```bash
+http://localhost:login
+```
+> #### Resultado en el navegador
+<img width="1365" height="767" alt="image" src="https://github.com/user-attachments/assets/5de6e708-3140-4321-b8bd-feb6c908727d" />
+
+> ### Paso 3: Iniciar sesión
+> Si ya tienes una cuenta, ingresa tus credenciales en la pantalla de login para acceder a la plataforma.
+<img width="1364" height="767" alt="image" src="https://github.com/user-attachments/assets/37a1ae7c-dcc3-44f6-86bf-01a3eab62886" />
+
+> #### Una vez iniciada la sesión correctamente, serás redirigido automáticamente a la página principal de la tienda.
+<img width="1365" height="767" alt="image" src="https://github.com/user-attachments/assets/66c4e5f1-3d98-4f2a-a765-67cc78d6ab37" />
+> #### 🏠 Aquí podrás navegar por los productos, acceder al blog, revisar tu perfil y explorar las distintas secciones disponibles.
+
+> ### Paso 4: Registrarse
+> Si es tu primera vez, haz clic en “Registrarse” y completa el formulario para crear tu cuenta.
+
+> ###  Paso 5:
+> ###  Paso 6:
+> ###  Paso 7:
+> ###  Paso 8:
+> ###  Paso 9:
+> ###  Paso 10:
+> ###  Paso 11:
+> Paso 12:
