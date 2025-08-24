@@ -165,14 +165,14 @@ http://localhost:login
 ```
 
 ## 🖼️ Captura de Pantallas
-> ### Paso 1:
+### Paso 1:
 > Ejecutamos la aplicación en modo desarrollo utilizando Maven
 <img width="935" height="187" alt="image" src="https://github.com/user-attachments/assets/bffd5ec2-b3c9-4a24-9eff-39bac13eeacb" />
 
 > #### Resultado en la consola
 <img width="1273" height="907" alt="image" src="https://github.com/user-attachments/assets/79f47663-a0a0-4c9f-b296-4a63e2146c5c" />
 
-> ###  Paso 2:
+###  Paso 2:
 > Abrimos nuestro navegador y escribimos:
  ```bash
 http://localhost:login
@@ -180,7 +180,7 @@ http://localhost:login
 > #### Resultado en el navegador
 <img width="1365" height="767" alt="image" src="https://github.com/user-attachments/assets/5de6e708-3140-4321-b8bd-feb6c908727d" />
 
-> ### Paso 3: Iniciar sesión
+### Paso 3: Iniciar sesión
 > Si ya tienes una cuenta, ingresa tus credenciales en la pantalla de login para acceder a la plataforma.
 <img width="1364" height="767" alt="image" src="https://github.com/user-attachments/assets/37a1ae7c-dcc3-44f6-86bf-01a3eab62886" />
 
@@ -189,7 +189,7 @@ http://localhost:login
 
 > #### 🏠 Aquí podrás navegar por los productos, acceder al blog, revisar tu perfil y explorar las distintas secciones disponibles.
 
-> ### Paso 4: Registrarse
+### Paso 4: Registrarse
 > Si es tu primera vez, haz clic en “Registrarse” y completa el formulario para crear tu cuenta.
 <img width="1365" height="767" alt="image" src="https://github.com/user-attachments/assets/7ed31529-156f-454e-a5a4-6f984e94a244" />
 
@@ -204,7 +204,7 @@ http://localhost:login
 
 > #### 🏠 Aquí podrás navegar por los productos, acceder al blog, revisar tu perfil y explorar las distintas secciones disponibles.
 
-> ### Paso 5: Visualización de registros en MySQL
+### Paso 5: Visualización de registros en MySQL
 > Tras iniciar sesión o registrarse, puedes verificar que los datos del usuario han sido almacenados correctamente en la base de datos MySQL.
 > 
 > 🗃️ También se registran las secciones disponibles en la página, como el blog, galería, contacto, tienda, entre otras.
