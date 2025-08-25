@@ -164,7 +164,7 @@ http://localhost:login
             └── 📄 application.properties
 ```
 
-## 🖼️ Captura de Pantallas
+## 🖼️ Capturas de Pantalla
 ### Paso 1:
 > Ejecutamos la aplicación en modo desarrollo utilizando Maven
 <img width="935" height="187" alt="image" src="https://github.com/user-attachments/assets/bffd5ec2-b3c9-4a24-9eff-39bac13eeacb" />
