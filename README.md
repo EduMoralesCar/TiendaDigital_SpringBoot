@@ -212,7 +212,7 @@ http://localhost:login
 > 📸 A continuación se muestra una captura de los registros en MySQL:
 > <img width="1134" height="617" alt="Registros en MySQL" src="https://github.com/user-attachments/assets/1acd7eca-f69b-4e1b-b148-fd0d95af6782" />
 
-> ### Paso 6: 👨‍💻 Créditos 
+### Paso 6: 👨‍💻 Créditos 
 > A continuación se muestran los nombres de los colaboradores principales del proyecto:
 > 
 <img width="1365" height="767" alt="image" src="https://github.com/user-attachments/assets/8e62375f-a0cc-45fc-a96f-723c9fc9d74e" />
