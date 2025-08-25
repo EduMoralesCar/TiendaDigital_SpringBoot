@@ -163,6 +163,7 @@ http://localhost:login
             │   └── 📄 login.html
             └── 📄 application.properties
 ```
+---
 
 ## 🖼️ Capturas de Pantalla
 ### Paso 1:
