@@ -89,79 +89,165 @@ mvn spring-boot:run
 http://localhost:login
 ```
 ## 🗂️ Estructura Completa del Proyecto
-```bash
-📁 TiendaDigital_SpringBoot/
-├── 📄 pom.xml
-├── 📄 README.md
-└── 📁 src/
-    └── 📁 main/
-        ├── 📁 java/
-        │   └── 📁 com/
-        │       └── 📁 edu/
-        │           └── 📁 tiendamueble/
-        │               ├── 📁 controllers/
-        │               │   ├── 📁 DEMO/
-        │               │   │  ├── 📄 DemoController.java
-        │               │   ├── 📁 JWT/
-        │               │   │  ├── 📄 JwtAuthenticationFilter.java
-        │               │   │  ├── 📄 JwtServicc.java
-        │               │   ├── 📄 AuthController.java
-        │               │   ├── 📄 AuthResponse.java
-        │               │   ├── 📄 AuthService.java
-        │               │   ├── 📄 AuthWebController.java
-        │               │   ├── 📄 InicioController.java
-        │               │   ├── 📄 LoginRequest.java
-        │               │   ├── 📄 RegisterRequest.java
-        │               │   └── 📄 UsuarioCoontrollers.java
-        │               ├── 📁 model/
-        │               │   ├── 📁 ENTITY/
-        │               │   │  ├── 📄 Role.java
-        │               │   │  ├── 📄 User.java
-        │               │   ├── 📄 Producto.java
-        │               │   ├── 📄 ArticuloBlog.java
-        │               │   ├── 📄 CategoriaGaleria.java
-        │               │   ├── 📄 Contacto.java
-        │               │   ├── 📄 ImagenGaleria.java
-        │               │   ├── 📄 SeccionNosotros.java
-        │               │   └── 📄 Pais.java
-        │               ├── 📁 repository/
-        │               │   ├── 📄 ArticuloBlogRepository.java
-        │               │   ├── 📄 CategoriaGaleriaRepository.java
-        │               │   ├── 📄 ContactoRepository.java
-        │               │   ├── 📄 ImagenGaleriaRepository.java
-        │               │   ├── 📄 SeccionNosotrosRepository.java
-        │               │   └── 📄 UserRepository.java
-        │               ├── 📁 service/
-        │               │   ├── 📄 AplicationConfig.java
-        │               │   └── 📄 SecurityConfig.java
-        │               └── 📄 TiendaMuebleApplication.java
-        └── 📁 resources/
-            ├── 📁 static/
-            │   ├── 📁 blog/
-            │   ├── 📄 diseño_exteriores.html
-            │   ├── 📄 diseño_interiores.html
-            │   ├── 📄 guias_colores.html
-            │   ├── 📄 nuevos_modelos.html
-            │   ├── 📁 css/
-            │   │   └── 📄 app.css
-            │   │   └── 📄 login.css
-            │   ├── 📁 js/
-            │   │   └── 📄 scripts.js
-            │   └── 📁 images/
-            │       ├── 🖼️ logo.png
-            │       └── 📁 muebles/
-            │           ├── 🪑 silla1.jpg
-            │           └── 🛏️ mesa1.jpg
-            ├── 📁 templates/
-            │   ├── 📄 index.html
-            │   ├── 📄 contacto.html
-            │   ├── 📄 galeria.html
-            │   ├── 📄 blog.html
-            │   ├── 📄 nosotros.html
-            │   ├── 📄 register.html
-            │   ├── 📄 tienda.html
-            │   └── 📄 login.html
-            └── 📄 application.properties
+```
+├── 📁 .git/ 🚫 (auto-hidden)
+├── 📁 .idea/ 🚫 (auto-hidden)
+├── 📁 .mvn/
+│   └── 📁 wrapper/
+│       └── 📄 maven-wrapper.properties
+├── 📁 src/
+│   ├── 📁 main/
+│   │   ├── 📁 java/
+│   │   │   └── 📁 com/
+│   │   │       └── 📁 example/
+│   │   │           └── 📁 proyect/
+│   │   │               └── 📁 TiendaMueble/
+│   │   │                   ├── 📁 Controllers/
+│   │   │                   │   ├── 📁 DEMO/
+│   │   │                   │   │   └── ☕ DemoController.java
+│   │   │                   │   ├── 📁 JWT/
+│   │   │                   │   │   ├── ☕ JwtAuthenticationFilter.java
+│   │   │                   │   │   └── ☕ JwtService.java
+│   │   │                   │   ├── ☕ AuthController.java
+│   │   │                   │   ├── ☕ AuthResponse.java
+│   │   │                   │   ├── ☕ AuthService.java
+│   │   │                   │   ├── ☕ AuthWebController.java
+│   │   │                   │   ├── ☕ InicioController.java
+│   │   │                   │   ├── ☕ LoginRequest.java
+│   │   │                   │   ├── ☕ RegisterRequest.java
+│   │   │                   │   └── ☕ UsuarioCoontrollers.java
+│   │   │                   ├── 📁 Security/
+│   │   │                   │   ├── ☕ AplicationConfig.java
+│   │   │                   │   └── ☕ SecurityConfig.java
+│   │   │                   ├── 📁 models/
+│   │   │                   │   ├── 📁 Entity/
+│   │   │                   │   │   ├── ☕ Role.java
+│   │   │                   │   │   └── ☕ User.java
+│   │   │                   │   ├── ☕ ArticuloBlog.java
+│   │   │                   │   ├── ☕ CategoriaGaleria.java
+│   │   │                   │   ├── ☕ Contacto.java
+│   │   │                   │   ├── ☕ ImagenGaleria.java
+│   │   │                   │   ├── ☕ Pais.java
+│   │   │                   │   ├── ☕ Producto.java
+│   │   │                   │   └── ☕ SeccionNosotros.java
+│   │   │                   ├── 📁 repositories/
+│   │   │                   │   ├── ☕ ArticuloBlogRepository.java
+│   │   │                   │   ├── ☕ CategoriaGaleriaRepository.java
+│   │   │                   │   ├── ☕ ContactoRepository.java
+│   │   │                   │   ├── ☕ ImagenGaleriaRepository.java
+│   │   │                   │   ├── ☕ ProductoRepository.java
+│   │   │                   │   ├── ☕ SeccionNosotrosRepository.java
+│   │   │                   │   └── ☕ UserRepository.java
+│   │   │                   └── ☕ TiendaMuebleApplication.java
+│   │   └── 📁 resources/
+│   │       ├── 📁 static/
+│   │       │   ├── 📁 blog/
+│   │       │   │   ├── 🌐 diseños_exteriores.html
+│   │       │   │   ├── 🌐 diseños_interiores.html
+│   │       │   │   ├── 🌐 guias_colores.html
+│   │       │   │   └── 🌐 nuevos_modelos.html
+│   │       │   ├── 📁 css/
+│   │       │   │   ├── 🎨 app.css
+│   │       │   │   └── 🎨 login.css
+│   │       │   ├── 📁 img/
+│   │       │   │   ├── 📁 Principal/
+│   │       │   │   │   ├── 🖼️ principal1.jpg
+│   │       │   │   │   ├── 🖼️ principal2.jpg
+│   │       │   │   │   └── 🖼️ principal3.jpg
+│   │       │   │   ├── 📁 blog/
+│   │       │   │   │   ├── 🖼️ diseño_exteriores.jpg
+│   │       │   │   │   ├── 🖼️ diseño_interiores.jpg
+│   │       │   │   │   ├── 🖼️ guia_colores.jpg
+│   │       │   │   │   └── 🖼️ nuevos_modelos.jpg
+│   │       │   │   ├── 📁 categoria/
+│   │       │   │   │   ├── 🖼️ categoria1.jpg
+│   │       │   │   │   ├── 🖼️ categoria2.jpg
+│   │       │   │   │   └── 🖼️ categoria3.jpg
+│   │       │   │   ├── 📁 galeria/
+│   │       │   │   │   ├── 🖼️ cocina_01.jpg
+│   │       │   │   │   ├── 🖼️ cocina_02.jpg
+│   │       │   │   │   ├── 🖼️ cocina_03.jpg
+│   │       │   │   │   ├── 🖼️ cocina_04.jpg
+│   │       │   │   │   ├── 🖼️ cocina_05.jpg
+│   │       │   │   │   ├── 🖼️ cocina_06.jpg
+│   │       │   │   │   ├── 🖼️ cocina_07.jpg
+│   │       │   │   │   ├── 🖼️ cocina_08.jpg
+│   │       │   │   │   ├── 🖼️ cocina_09.jpg
+│   │       │   │   │   ├── 🖼️ dormitorio_01.jpg
+│   │       │   │   │   ├── 🖼️ dormitorio_02.jpg
+│   │       │   │   │   ├── 🖼️ dormitorio_03.jpg
+│   │       │   │   │   ├── 🖼️ dormitorio_04.jpg
+│   │       │   │   │   ├── 🖼️ dormitorio_05.jpg
+│   │       │   │   │   ├── 🖼️ dormitorio_06.jpg
+│   │       │   │   │   ├── 🖼️ dormitorio_07.jpg
+│   │       │   │   │   ├── 🖼️ dormitorio_08.jpg
+│   │       │   │   │   ├── 🖼️ dormitorio_09.jpg
+│   │       │   │   │   ├── 🖼️ jardin_01.jpg
+│   │       │   │   │   ├── 🖼️ jardin_02.jpg
+│   │       │   │   │   ├── 🖼️ jardin_03.jpg
+│   │       │   │   │   ├── 🖼️ jardin_04.jpg
+│   │       │   │   │   ├── 🖼️ jardin_05.jpg
+│   │       │   │   │   ├── 🖼️ jardin_06.jpg
+│   │       │   │   │   ├── 🖼️ jardin_07.jpg
+│   │       │   │   │   ├── 🖼️ jardin_08.jpg
+│   │       │   │   │   ├── 🖼️ jardin_09.jpg
+│   │       │   │   │   ├── 🖼️ oficina_01.jpg
+│   │       │   │   │   ├── 🖼️ oficina_02.jpg
+│   │       │   │   │   ├── 🖼️ oficina_03.jpg
+│   │       │   │   │   ├── 🖼️ oficina_04.jpg
+│   │       │   │   │   ├── 🖼️ oficina_05.jpg
+│   │       │   │   │   ├── 🖼️ oficina_06.jpg
+│   │       │   │   │   ├── 🖼️ oficina_07.jpg
+│   │       │   │   │   ├── 🖼️ oficina_08.jpg
+│   │       │   │   │   ├── 🖼️ oficina_09.jpg
+│   │       │   │   │   ├── 🖼️ sala_01.jpg
+│   │       │   │   │   ├── 🖼️ sala_02.jpg
+│   │       │   │   │   ├── 🖼️ sala_03.jpg
+│   │       │   │   │   ├── 🖼️ sala_04.jpg
+│   │       │   │   │   ├── 🖼️ sala_05.jpg
+│   │       │   │   │   ├── 🖼️ sala_06.jpg
+│   │       │   │   │   ├── 🖼️ sala_07.jpg
+│   │       │   │   │   ├── 🖼️ sala_08.jpg
+│   │       │   │   │   └── 🖼️ sala_09.jpg
+│   │       │   │   ├── 📁 nosotros/
+│   │       │   │   │   ├── 🖼️ nosotros1.jpg
+│   │       │   │   │   ├── 🖼️ nosotros2.png
+│   │       │   │   │   ├── 🖼️ nosotros3.png
+│   │       │   │   │   ├── 🖼️ nosotros4.png
+│   │       │   │   │   └── 🖼️ nosotros5.png
+│   │       │   │   └── 📁 productos/
+│   │       │   │       ├── 🖼️ producto1.jpg
+│   │       │   │       ├── 🖼️ producto2.jpg
+│   │       │   │       ├── 🖼️ producto3.jpg
+│   │       │   │       ├── 🖼️ producto4.jpg
+│   │       │   │       ├── 🖼️ producto5.jpg
+│   │       │   │       └── 🖼️ producto6.jpg
+│   │       │   └── 📁 js/
+│   │       │       └── 📄 app.js
+│   │       ├── 📁 templates/
+│   │       │   ├── 🌐 blog.html
+│   │       │   ├── 🌐 contacto.html
+│   │       │   ├── 🌐 galeria.html
+│   │       │   ├── 🌐 index.html
+│   │       │   ├── 🌐 login.html
+│   │       │   ├── 🌐 nosotros.html
+│   │       │   ├── 🌐 register.html
+│   │       │   └── 🌐 tienda.html
+│   │       └── 📄 application.properties
+│   └── 📁 test/
+│       └── 📁 java/
+│           └── 📁 com/
+│               └── 📁 example/
+│                   └── 📁 proyect/
+│                       └── 📁 TiendaMueble/
+│                           └── ☕ TiendaMuebleApplicationTests.java
+├── 📁 target/ 🚫 (auto-hidden)
+├── 📄 .gitattributes
+├── 🚫 .gitignore
+├── 📖 README.md
+├── 📄 mvnw
+├── 🐚 mvnw.cmd
+└── 📄 pom.xml
 ```
 ---
 
